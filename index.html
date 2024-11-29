@@ -4,97 +4,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Website</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-[#e9ddd7]">
+
+
+
+
+  <!-- Navigation Section -->
   <section class="menu">
-    <div class="nav">
+    <div class="nav flex justify-between items-center py-6 px-8">
       <div class="logo">
-        <h1>Food<b>io</b></h1>
+        <h1 class="font-bold text-xl">Food<b class="text-orange-500">io</b></h1>
       </div>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Gallery</a></li>
+      <ul class="flex space-x-6">
+        <li><a class="text-black font-medium text-base active" href="#">Home</a></li>
+        <li><a class="text-black font-medium text-base" href="#">Menu</a></li>
+        <li><a class="text-black font-medium text-base" href="#">Service</a></li>
+        <li><a class="text-black font-medium text-base" href="#">About Us</a></li>
+        <li><a class="text-black font-medium text-base" href="#">Gallery</a></li>
       </ul>
-<div>
-  <input class="signin" type="submit" value="Sign In" name="signin">
-<input class="signup" type="submit" value="Sign Up" name="signup">
-</div>
+      <div>
+        <input class="signin px-4 py-2 bg-transparent font-semibold cursor-pointer border-none" type="submit" value="Sign In">
+        <input class="signup px-4 py-2 bg-orange-500 text-white font-semibold rounded-lg cursor-pointer" type="submit" value="Sign Up">
+      </div>
     </div>
   </section>
 
-<section class="grid">
-  <div class="content">
+  <!-- Hero Section -->
+  <section class="hero grid grid-cols-2 gap-8 mt-10 items-center px-8">
     <div class="content-left">
-            <div class="info">
-              <h2>Order Your Best<br>Food Anytime</h2>
-              <p>hey, Our delicious food is waiting for you, <br>
-              We are always near to you with fresh item of food.</p>
+      <h2 class="text-4xl font-bold mb-4">Order Your Best<br>Food Anytime</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Hey, Our delicious food is waiting for you. <br>
+        We are always near to you with fresh items of food.
+      </p>
+      <button class="explore-btn px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg">Explore Now</button>
+    </div>
+    <div class="content-right flex justify-center">
+      <img class="food-img w-72" src="images/Food-PNG-Isolated-Pic.png" alt="Food">
+    </div>
+  </section>
 
-              <button>Explore Now</button>
-            </div>
-         
+
+
+  <!-- Navigation Section -->
+  <!-- Category Section -->
+<section class="category mt-16 px-8">
+  <div class="text-center mb-12">
+    <h3 class="text-2xl font-semibold">Popular Dishes</h3>
+  </div>
+  <div class="card-list grid grid-cols-3 gap-6">
+    <!-- Card 1 -->
+    <div class="card pop-up bg-white shadow-md rounded-lg p-6">
+      <div class="img-container flex justify-center mb-4">
+        <img class="w-24 h-24 object-cover rounded-full shadow-lg" src="images/bbb.png" alt="Burger">
+      </div>
+      <h4 class="text-lg font-bold text-center">Beef Burger</h4>
+      <p class="text-sm text-gray-600 text-center mt-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, asperiores cumque!
+      </p>
+      <div class="text-center mt-4">
+        <span class="text-orange-500 text-xl font-semibold">$10.99</span>
+      </div>
     </div>
 
-    <div class="content-right">
-      <img src="images/Food-PNG-Isolated-Pic.png" alt="">
+    <!-- Card 2 -->
+    <div class="card pop-up bg-white shadow-md rounded-lg p-6">
+      <div class="img-container flex justify-center mb-4">
+        <img class="w-24 h-24 object-cover rounded-full shadow-lg" src="images/bbb.png" alt="Burger">
+      </div>
+      <h4 class="text-lg font-bold text-center">Chicken Burger</h4>
+      <p class="text-sm text-gray-600 text-center mt-2">
+        Delicious chicken burger with fresh veggies and a spicy sauce!
+      </p>
+      <div class="text-center mt-4">
+        <span class="text-orange-500 text-xl font-semibold">$9.99</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card pop-up bg-white shadow-md rounded-lg p-6">
+      <div class="img-container flex justify-center mb-4">
+        <img class="w-24 h-24 object-cover rounded-full shadow-lg" src="images/bbb.png" alt="Burger">
+      </div>
+      <h4 class="text-lg font-bold text-center">Veggie Burger</h4>
+      <p class="text-sm text-gray-600 text-center mt-2">
+        A healthy vegetarian burger, packed with flavor and freshness.
+      </p>
+      <div class="text-center mt-4">
+        <span class="text-orange-500 text-xl font-semibold">$8.99</span>
+      </div>
     </div>
   </div>
- 
-</section> 
+</section>
 
-<section class="category">
-
-<div class="list-items">
- <h3>Popular Dishes</h3>
-
- <div class="card-list">
-  <div class="card">
-    <img src="images/bbb.png" alt="">
-    <div class="food-title">
-      <h1>Beef Burger</h1>
-     </div>
-     <div class="desc-food">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, asperiores cumque!</p>
-     </div>
-     <div class="price">
-      <span>$10.99</span>
-    </div>
-    </div>
-    <div class="card">
-    <img src="images/bbb.png" alt="">
-    <div class="food-title">
-      <h1>Beef Burger</h1>
-     </div>
-     <div class="desc-food">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, asperiores cumque!</p>
-     </div>
-     <div class="price">
-      <span>$10.99</span>
-    </div>
-    </div>
-
-    <div class="card">
-      <img src="images/bbb.png" alt="">
-      <div class="food-title">
-        <h1>Beef Burger</h1>
-       </div>
-       <div class="desc-food">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, asperiores cumque!</p>
-       </div>
-       <div class="price">
-        <span>$10.99</span>
-      </div>
-      </div>
-
- 
-  </div> 
- </div>
-
- </section>
-
- </body>
- </html>
+</body>
+</html>
